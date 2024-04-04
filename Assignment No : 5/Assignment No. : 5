@@ -1,0 +1,26 @@
+    for i in vars:
+        if i > mi:
+            mi = i
+            
+    print("The maximum value is:",mi)
+
+def minimum(*vars):
+    
+    mi = 10202
+    for i in vars:
+        if i < mi:
+            mi = i
+            
+    print("The minimum value is:",mi)
+    
+def mean(*vars):
+    sum = 0
+    for i in vars:
+        sum = sum + i
+            
+            
+    print("The mean value is:",sum/len(vars))
+    
+maximum(1,2,5,6)
+minimum(1,2,59)
+mean(1,2,5,8)
