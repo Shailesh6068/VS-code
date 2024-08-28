@@ -2,26 +2,20 @@
 import pandas as pd
 print(pd.__version__)
 
-
-import pandas as pd
 a = [1,45,67]
 my_var = pd.Series(a)
-my_var1 = a[0]
-print("The first number in series is:",my_var1)
-print(my_var)
+my_var1 = a[0]                     #access the data at particular index/label
+print("The first number in series is:",my_var1)    
+print(my_var)                      #print the series
 
-import pandas as pd
-a = [1,45,67]
-
-print(my_var)
-
-#to print without indexing
+#to print by change the name of index
 a = [45,52,63,56]
 my_var = pd.Series(a , index = ["z","e","r","x"])
 print("The value at z th index/label is :",my_var["z"])
 print(my_var)
 
-calories = {"day1": 420, "day2": 380}  #here key is a label
+#here key is a label
+calories = {"day1": 420, "day2": 380}  
 myvar = pd.Series(calories)
 print(myvar)
 
