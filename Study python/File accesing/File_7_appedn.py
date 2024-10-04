@@ -1,0 +1,7 @@
+f = open("E:\shai.txt","a")
+f.write("Pccoe'27 \n Cs \n")
+f.close()
+f = open("E:\shai.txt","r")
+data = f.read()
+print(data)
+f.close()
